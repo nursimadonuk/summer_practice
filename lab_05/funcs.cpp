@@ -42,7 +42,7 @@ int nextPrime(int n) {
 
 //return the number of primes in the range a ≤ x ≤ b
 int countPrimes(int a, int b) {
-  int count = 0
+  int count = 0;
   for(int i = a; i < b+1; i++) {
     if(isPrime(i) == true) {
       count++;
@@ -61,6 +61,9 @@ determines whether or not its argument is a twin prime.
 */
 
 bool isTwinPrime(int n) {
+  if(isPrime(n) == false) {
+    return false;
+  }
   if(isPrime(n+2) == true || isPrime(n-2) == true) {
     return true;
   }else {
