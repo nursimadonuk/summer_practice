@@ -24,8 +24,9 @@ public:
   int number;
   std::vector<int> otherPossibilities;
   int row;
-  inr column;
+  int column;
   bool given;
+  Box the_box_before;
   void setGiven() {
     if()
   }
@@ -173,6 +174,7 @@ to the vector otherPossibilities.
       }else {
         current.hadAnotherPossibility = true;
         current.otherPossibilities.push_back(OneThruNine[i]);
+        //set the box before
       }
     }
   }
@@ -186,6 +188,8 @@ square to the number that was in the vector otherPossibilities. We know
 if a square had another possibility if the vector is not empty.
 */
 
-void backtrack() {
-
+void backtrack(Box &impossible) {
+  if(impossible.the_box_before.otherPossibilities.size() != 0) {
+      
+  }
 }
