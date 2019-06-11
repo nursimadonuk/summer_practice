@@ -11,10 +11,10 @@ main.o: main.cpp funcs.h
 funcs.o: funcs.cpp funcs.h
 
 clean:
-	rm funcs.o main.o main doctest
+	rm funcs.o main.o main test 
 
 run: main
 	./main
 
 runtests: test
-	./test 
+	./test
