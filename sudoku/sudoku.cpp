@@ -15,7 +15,7 @@ which ones work for all the boxes. So, if we see that one box
 cannot have anything in it that means that we did something wrong
 in the previous steps so we will backtrack.
 */
-
+ 
 //enum EmpOrFull {EMPTY, FULL};
 int OneThruNine[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 class Box {
@@ -190,6 +190,6 @@ if a square had another possibility if the vector is not empty.
 
 void backtrack(Box &impossible) {
   if(impossible.the_box_before.otherPossibilities.size() != 0) {
-      
+
   }
 }
