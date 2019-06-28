@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 /*
 A program that solves a sudoku puzzle. Given 9x9 2d array of numbers
 the empty spaces will be represented as 0. Each row, column and 3x3
@@ -15,7 +16,7 @@ which ones work for all the boxes. So, if we see that one box
 cannot have anything in it that means that we did something wrong
 in the previous steps so we will backtrack.
 */
- 
+
 //enum EmpOrFull {EMPTY, FULL};
 int OneThruNine[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 class Box {
